@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="college.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="https://www.collegenp.com/uploads/2018/03/Lumbini-Engineering-College.jpg" alt="Brand logo">
+            <span class="brand-logo-name">
+                LEC College
+            </span>
+        </a>
+        <nav class="navbar">
+            <ul class="navbar-lists" id="myTopnav">
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a class="navbar-link home-link" href="#">
+                        Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i>
+                    <a class="navbar-link about-link" href="#about-us-section">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a class="navbar-link contact-link" href="#contact-form">
+                        Contact Us
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-bullhorn"></i>
+                    <a class="navbar-link service-link" href="#notice-bord-sction">
+                        Notice Board
+                    </a>
+                </li>
+                <li><i class="fas fa-map-marked-alt"></i>
+                    <a class="navbar-link contact-link" href="#campus-on-map">
+                        Our Campus
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="school-img-container">
+            <div class="img-container">
+                <img src="data:image/jpeg;base64,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"
+                    alt="school img" class="school-img">
+                <h1 class="img-title">
+                    Welcome to Lumbini Engineering college
+                </h1>
+            </div>
+        </div>
+
+        <section id="vision">
+            <h2 class="vision-heading">Our Vision</h2>
+            <p>At LEC, we envision a learning community where every
+                student is inspired to reach their full potential. We
+                strive to cultivate a nurturing environment that fosters
+                curiosity, creativity, and critical thinking skills.
+                Our aim is to empower students to become lifelong learners,
+                compassionate leaders, and responsible global citizens.
+                Through innovative teaching methods, personalized support,
+                and a diverse range of opportunities
+            </p>
+        </section>
+
+        <div class="main-notice-section" id="notice-bord-sction">
+            <div class="notice-container">
+                <div class="notice-bord">
+                    <h2 class="notice-bord-heading">
+                        Campus Notice Board
+                    </h2>
+                    <div>
+                        <ul>
+                            <li>
+                                <i>June 1, 2024:</i>
+                                Inauguration ceremony for
+                                the new academic year.
+                                <span class="new-text">New</span>
+                            </li>
+                            <li>
+                                <i>June 15, 2023:</i>
+                                Science fair showcasing
+                                innovative student projects.
+                                <span class="new-text">New</span>
+                            </li>
+                            <li>
+                                <i>June 30, 2023:</i>
+                                Cultural extravaganza featuring
+                                dance, music, and drama performances.
+                                <span class="new-text">New</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Events Section -->
+                <div class="event-card">
+                    <h2 class="event-heading">Upcoming Events</h2>
+                    <div class="event-details">
+                        <div class="event">
+                            <h3>Event Name 1</h3>
+                            <p>Date: June 15, 2024</p>
+                            <p>Time: 9:00 AM - 12:00 PM</p>
+                            <p>Location: College Seminar Hall</p>
+                            <p>
+                                <strong>Description:</strong>
+                                Quiz competition.
+                            </p>
+                        </div>
+                        <div class="event">
+                            <h3>Event Name 2</h3>
+                            <p>Date: June 20, 2024</p>
+                            <p>Time: 2:00 PM - 5:00 PM</p>
+                            <p>Location: Sports Ground</p>
+                            <p>
+                                <strong>Description:</strong>
+                                Cricket tournament.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about-us-section">
+            <div class="about-us-container">
+                <h2 class="aboutus-heading">About Us</h2>
+                <p>
+                    <strong class="subheading">
+                        Company Profile and Brand:
+                    </strong>
+                    Lumbini Engeerning College is a leading platform that
+                    provides computer science resources and
+                    coding challenges for programmers and
+                    technology enthusiasts, along with interview
+                    and exam preparations for upcoming aspirants.
+                    With a strong emphasis on enhancing coding
+                    skills and knowledge, it has become a trusted
+                    destination for over 12 lakhs plus registered
+                    users worldwide.
+                </p>
+            </div>
+        </section>
+
+        <section class="our-school-map" id="campus-on-map">
+            <h2 class="location-heading">
+                Find Our Location On Map
+            </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14142.43150338308!2d83.4684573!3d27.6056842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399684de6af3c30d%3A0x9895a37f3948af3e!2sLumbini%20Engineering%20College!5e0!3m2!1sen!2snp!4v1716713311640!5m2!1sen!2snp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>"
+
+            </iframe>
+        </section>
+
+        <section id="contact-form">
+            <h2 class="contact-form-heading">
+                Contact Us Form
+            </h2>
+            <div class="container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                            Full Name
+                        </label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required>
+                          </textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My college. All rights reserved.</p>
+    </footer>
+
+    <script src="college.js"></script>
+
+</body>
+
+</html>
